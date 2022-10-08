@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:universe_app/views/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Universe App',
       debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
