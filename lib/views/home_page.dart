@@ -1,8 +1,9 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
 
-import 'package:universe_app/data/data.dart';
+import 'package:universe_app/models/data.dart';
 import 'package:universe_app/utils/colors.dart';
+import 'package:universe_app/views/details_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -73,6 +74,14 @@ class HomePage extends StatelessWidget {
                         itemWidth: MediaQuery.of(context).size.width - 2 * 64,
                         itemBuilder: (context, index) {
                           return InkWell(
+                            onTap: () => Navigator.push(
+                              context,
+                              PageRouteBuilder(
+                                pageBuilder: (context, a, b) => DetailPage(
+                                  planetInfo: planets[index],
+                                ),
+                              ),
+                            ),
                             child: Stack(
                               children: [
                                 Column(
