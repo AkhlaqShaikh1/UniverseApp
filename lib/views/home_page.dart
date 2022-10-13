@@ -89,7 +89,7 @@ class HomePage extends StatelessWidget {
                                 Column(
                                   children: [
                                     const SizedBox(
-                                      height: 110,
+                                      height: 100,
                                     ),
                                     Card(
                                       elevation: 8,
@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
                                         padding: const EdgeInsets.all(32.0),
                                         child: Column(
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                              CrossAxisAlignment.center,
                                           children: [
                                             const SizedBox(height: 100),
                                             Text(
