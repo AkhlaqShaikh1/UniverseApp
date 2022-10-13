@@ -67,7 +67,9 @@ class HomePage extends StatelessWidget {
                       child: Swiper(
                         pagination: const SwiperPagination(
                           builder: DotSwiperPaginationBuilder(
-                              activeSize: 20, space: 8),
+                            activeSize: 15,
+                            space: 6,
+                          ),
                         ),
                         itemCount: planets.length,
                         layout: SwiperLayout.STACK,
